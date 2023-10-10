@@ -1,10 +1,12 @@
-from trans import *
+from trans import Item
+
 
 def main():
-    first = input("Enter your full name: ")
-    names = first.split()
-    customer = Customer(names[0], names[1], '256-555-5555')
-    print(customer)
+    item = Item("item 1", 19.99)
+    item_list = [item]
+
+    item.add_item(19.99, item_list)
 
 
-main()
+if __name__ == "__main__":
+    main()
